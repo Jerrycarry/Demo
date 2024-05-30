@@ -1,0 +1,5 @@
+# Project exclude paths
+/array/target/
+/data_type/target/
+/flow_control/target/
+/opp/target/
