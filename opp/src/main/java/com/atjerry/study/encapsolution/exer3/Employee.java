@@ -13,17 +13,17 @@ public class Employee {
 
     private String name;
 
-    private String gender;
+    private char gender;
 
     private int age;
 
-    private long telephone;
+    private String telephone;
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public void setGender(String gender) {
+    public void setGender(char gender) {
         this.gender = gender;
     }
 
@@ -31,7 +31,7 @@ public class Employee {
         this.age = age;
     }
 
-    public void setTelephone(long telephone) {
+    public void setTelephone(String telephone) {
         this.telephone = telephone;
     }
 
@@ -39,7 +39,7 @@ public class Employee {
         return name;
     }
 
-    public String getGender() {
+    public char getGender() {
         return gender;
     }
 
@@ -47,17 +47,14 @@ public class Employee {
         return age;
     }
 
-    public long getTelephone() {
+    public String getTelephone() {
         return telephone;
     }
 
-    @Override
-    public String toString() {
-        return "Employee{" +
-                "name='" + name + '\'' +
+    public String getInfo(){
+       return   "name='" + name + '\'' +
                 ", gender='" + gender + '\'' +
                 ", age=" + age +
-                ", telephone=" + telephone +
-                '}';
+                ", telephone=" + telephone;
     }
 }
