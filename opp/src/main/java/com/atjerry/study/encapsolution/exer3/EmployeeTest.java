@@ -30,6 +30,8 @@ public class EmployeeTest {
             System.out.print("电话");
             String phoneNumber = scanner.next();
 
+            scanner.close();
+
 
             //给指定的employee对象的个属性赋值
             employee[i].setName(name);
