@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.atjerry.study</groupId>
-    <artifactId>opp2</artifactId>
+    <artifactId>java_exception</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -24,4 +24,3 @@
     </dependencies>
 
 </project>
-

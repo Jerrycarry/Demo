@@ -12,7 +12,7 @@ import com.atjerry.study.method_more.recursion.RecursionTest;
  */
 
 public class RecursionExer01 {
-    //练习1：
+    //练习1：裴波那契数列
     //已知一个数列：f(20)=1,f(21)=4,f(n+2)=2*f(n+1)+f(n)
     //其中n是大于0的整数，求f(10)的值。
 
