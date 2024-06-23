@@ -1,4 +1,4 @@
-package com.atjerry.study.nosafe;
+package com.atjerry.study.threadsafe.nosafe;
 
 /**
  * @BelongsProject: Demo

@@ -1,11 +1,11 @@
-package com.atjerry.study.threadsafe;
+package com.atjerry.study.threadsafe.threadsafe;
 
 /**
  * @BelongsProject: Demo
  * @BelongsPackage: com.atjerry.study.nosafe
  * @Author: Jerry
  * @CreateTime: 2024-06-21  00:51
- * @Description:
+ * @Description: 实现方式：使用继承Tread类解决线程安全问题
  * @Version: 1.0
  */
 
@@ -38,7 +38,7 @@ class Window extends Thread{
         }
     }
 }
-public class WindowTest1 {
+public class WindowTest {
     public static void main(String[] args) {
         Window w1 = new Window();
         Window w2 = new Window();

@@ -1,0 +1,38 @@
+1.String类的理解
+1.1类的声明
+public final class String
+    implements java.io.Serializable,Comparable<String>,CharSequence
+
+> final:String是不可继承的
+> Serializable:可序列化接口,凡是实现此接口的类的对象就可以通过网络或本地流进行数据的传输。
+> Comparable:凡是实现此类接口的类,其对象都可以比较大小。
+
+1.2内部声明的属性：
+jdk8中：
+private final char value[];//存储字符串数据的容器
+    > final :指明此value数组一旦初始化；其地址就不可变。
+jdk9中：
+private final byte[] value; //存储字符串数据的容器。
+2.字符串常量的存储位置
+> 字符串常量池都存储在字符串常量池(StringTable)中。
+> 字符串常量池不允许存放两个相同的字符串常量。
+> 字符串常量池,在不同的jdk版本中,存放位置不同。
+    jdk7之前：字符串常量池存放在方法区。
+    jdk7及之后：字符串常量池存放在堆空间。
+
+3.String的不可变性理解
+
+
+5.String的连接操作:+
+情况1：常量 + 常量：结果仍然处于字符串常量池
+情况2：常量 + 常量 或 常量 + 常量：都会通过new的方式创建一个新的字符串,返回堆空间中此字符串对象的地址
+情况3：调用字符串的intern():返回的是字符串常量池中字面量的地址
+
+
+6.String的构造器和常用方法
+6.1构造器
+public
+
+
+
+6.2常用方法

@@ -1,15 +1,14 @@
-package com.atjerry.study.runnablesafe;
+package com.atjerry.study.threadsafe.runnablesafe;
 
 /**
  * @BelongsProject: Demo
  * @BelongsPackage: com.atjerry.study.nosafe
  * @Author: Jerry
  * @CreateTime: 2024-06-21  00:37
- * @Description:
+ * @Description: 三个窗口买票使用方式Runnable接口方式
  * @Version: 1.0
  */
 
-//三个窗口买票  使用方式Runnable接口方式
 
 class SaleTicket implements Runnable {
 
