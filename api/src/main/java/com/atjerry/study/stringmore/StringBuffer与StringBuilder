@@ -1,0 +1,15 @@
+
+1.三个类的对比:String、StringBuffer、StringBuilder
+> String:不可变的字符序列;
+> StringBuffer:可变的字符序列;JDK1.0声明,线程安全的
+> StringBuilder:可变的字符序列;
+
+2.StringBuffer/StringBuilder的可变性分析
+
+看源码
+3.源码启示
+> 如果开发中需要频繁的针对字符串进行增、删、改等操作，建议使用StringBuffer或StringBuilder替换String,因为使用String效率低
+
+> 如果开发中不考虑线程安全问题，建议使用StringBuilder替换StringBuffer，因为效率高
+
+4.StringBuffer和StringBuilder中的常用方法。
