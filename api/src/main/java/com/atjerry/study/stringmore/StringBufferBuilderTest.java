@@ -1,6 +1,8 @@
 package com.atjerry.study.stringmore;
 
+import com.sun.org.apache.xpath.internal.operations.String;
 import org.junit.Test;
+
 
 /**
  * @BelongsProject: Demo
@@ -30,6 +32,20 @@ public class StringBufferBuilderTest {
     public void testAppend(){
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("abc").append("def");
+        System.out.println(stringBuilder);
+    }
+
+    @Test
+    public void testDelete(){
+        StringBuilder stringBuilder = new StringBuilder("123456");
+        stringBuilder.delete(1,4);
+        System.out.println(stringBuilder);
+    }
+
+    @Test
+    public void testDeleteCharAt(){
+        StringBuilder stringBuilder = new StringBuilder("12345678");
+        stringBuilder.deleteCharAt(2);
         System.out.println(stringBuilder);
     }
 

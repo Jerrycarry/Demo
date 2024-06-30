@@ -1,0 +1,38 @@
+1.list接口中存储数据的特点：用于存储有序、可以重复的数据。--->使用List替代数组。"动态数组"
+
+2.List中的常用方法:
+插入元素
+-`void add(int index,Object ele)`:在index位置插入ele元素
+-boolean addAll(int index,Collection eles):从index位置开始将eles中的所有元素添加进来
+获取元素
+-`Object get(int index)`:获取指定index位置的元素
+-List subList(int fromIndex,int toIndex):返回从fromIndex到toIndex位置的子集合
+获取元素索引
+-
+int index0f(Object obj):返回obj在集合中首次出现的位置
+-int lastIndex0f(Object obj):返回obj在当前集合中末次出现的位置
+删除和替换元素
+-`Object remove(int index)`:移除指定index位置的元素，并返回此元素
+-`Object set(int index,Object ele)`:设置指定index位置的元素为ele
+
+小结：
+    增
+        add(Object) object
+        addAll(Collection coll)
+    删
+        remove(Object) object
+        remove(int index)
+
+    改
+        set(int index,Object ele)
+
+    查
+        get(int index)
+    插
+        add(Object) object
+        addAll(Collection coll)
+    长度
+        size()
+    遍历
+        iterator():使用迭代器遍历
+        增强for循环
